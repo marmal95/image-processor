@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessor", "ImageProcessor\ImageProcessor.vcxproj", "{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessor-OpenMP", "ImageProcessor-OpenMP\ImageProcessor-OpenMP.vcxproj", "{C7600BFB-FDE8-482A-9E56-BE80936481D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessor-OpenMPI", "ImageProcessor-OpenMPI\ImageProcessor-OpenMPI.vcxproj", "{D99D9260-082C-4449-9704-940B48DADE9F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessor-CUDA", "ImageProcessor-CUDA\ImageProcessor-CUDA.vcxproj", "{36AF832A-4B51-4629-98AE-FAB86254590E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Debug|x64.ActiveCfg = Debug|x64
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Debug|x64.Build.0 = Debug|x64
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Debug|x86.ActiveCfg = Debug|Win32
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Debug|x86.Build.0 = Debug|Win32
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Release|x64.ActiveCfg = Release|x64
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Release|x64.Build.0 = Release|x64
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Release|x86.ActiveCfg = Release|Win32
+		{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}.Release|x86.Build.0 = Release|Win32
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Debug|x64.ActiveCfg = Debug|x64
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Debug|x64.Build.0 = Debug|x64
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Debug|x86.ActiveCfg = Debug|Win32
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Debug|x86.Build.0 = Debug|Win32
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Release|x64.ActiveCfg = Release|x64
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Release|x64.Build.0 = Release|x64
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Release|x86.ActiveCfg = Release|Win32
+		{C7600BFB-FDE8-482A-9E56-BE80936481D7}.Release|x86.Build.0 = Release|Win32
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Debug|x64.ActiveCfg = Debug|x64
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Debug|x64.Build.0 = Debug|x64
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Debug|x86.ActiveCfg = Debug|Win32
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Debug|x86.Build.0 = Debug|Win32
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Release|x64.ActiveCfg = Release|x64
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Release|x64.Build.0 = Release|x64
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Release|x86.ActiveCfg = Release|Win32
+		{D99D9260-082C-4449-9704-940B48DADE9F}.Release|x86.Build.0 = Release|Win32
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Debug|x64.ActiveCfg = Debug|x64
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Debug|x64.Build.0 = Debug|x64
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Debug|x86.ActiveCfg = Debug|Win32
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Debug|x86.Build.0 = Debug|Win32
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Release|x64.ActiveCfg = Release|x64
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Release|x64.Build.0 = Release|x64
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Release|x86.ActiveCfg = Release|Win32
+		{36AF832A-4B51-4629-98AE-FAB86254590E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6170C8B8-A15D-4098-8ED9-06C6AB1EEC1A}
+	EndGlobalSection
+EndGlobal
