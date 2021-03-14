@@ -26,11 +26,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="source\CudaAlgorithm.cu">
+    <ClCompile Include="source\main.cpp">
       <Filter>Source Files</Filter>
-    </None>
-    <None Include="source\main.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="source\CudaAlgorithm.cu">
       <Filter>Source Files</Filter>
-    </None>
+    </CudaCompile>
   </ItemGroup>
 </Project>

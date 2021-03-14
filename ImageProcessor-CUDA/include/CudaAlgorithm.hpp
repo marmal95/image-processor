@@ -5,5 +5,5 @@
 
 namespace Cuda
 {
-	void applyFilter(sf::Image&, const Filter::Kernel&);
+    void applyFilter(sf::Image&, const Filter::Kernel&);
 }

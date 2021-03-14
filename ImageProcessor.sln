@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1022
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessor", "ImageProcessor\ImageProcessor.vcxproj", "{64EBBCDA-C181-4513-A3B3-D77287F3DBE8}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessor-OpenMPI", "ImageProcessor-OpenMPI\ImageProcessor-OpenMPI.vcxproj", "{D99D9260-082C-4449-9704-940B48DADE9F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageProcessor-CUDA", "ImageProcessor-CUDA\ImageProcessor-CUDA.vcxproj", "{36AF832A-4B51-4629-98AE-FAB86254590E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ADD0F129-1280-46C2-891E-15E14526C7EC}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

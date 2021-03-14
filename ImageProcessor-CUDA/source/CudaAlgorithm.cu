@@ -16,11 +16,11 @@ __device__ void alignChannel(int& channelValue)
 __global__ void applyFilterOnCuda(
 	const sf::Uint8* inputImageData, sf::Uint8* outputImageData,
 	const std::size_t width, const std::size_t height,
-	const float* filter, const int kernelSize)
+	const float* filter, const std::size_t kernelSize)
 {
 	int x = blockIdx.x * blockDim.x + threadIdx.x;
 	int y = blockIdx.y * blockDim.y + threadIdx.y;
-	int kernelMargin = kernelSize / 2;
+	int kernelMargin = static_cast<int>(kernelSize / 2);
 
 
 	if (((x - kernelMargin) > 0 && (x + kernelMargin) < width) &&
@@ -36,10 +36,10 @@ __global__ void applyFilterOnCuda(
 				const auto kernelIndex = kernelXIndex * kernelSize + kernelYIndex;
 				const auto kernelValue = filter[kernelIndex];
 				
-				const auto inPixel = &inputImageData[((x + kernelX) + (y + kernelY) * width) * 4];
-				newRedChannel += inPixel[0] * kernelValue;
-				newGreenChannel += inPixel[1] * kernelValue;
-				newBlueChannel += inPixel[2] * kernelValue;
+				const auto pixel = &inputImageData[((x + kernelX) + (y + kernelY) * width) * 4];
+				newRedChannel += static_cast<int>(pixel[0] * kernelValue);
+				newGreenChannel += static_cast<int>(pixel[1] * kernelValue);
+				newBlueChannel += static_cast<int>(pixel[2] * kernelValue);
 			}
 		}
 
@@ -73,7 +73,8 @@ void Cuda::applyFilter(sf::Image& image, const Filter::Kernel& filter)
 	cudaEventRecord(start);
 
 	dim3 threadsPerBlock(16, 16);
-	dim3 numBlocks(ceil((float)image.getSize().x / threadsPerBlock.x), ceil((float)image.getSize().y / threadsPerBlock.y));
+	dim3 numBlocks(static_cast<uint32_t>(ceil((float)image.getSize().x / threadsPerBlock.x)),
+				   static_cast<uint32_t>(ceil((float)image.getSize().y / threadsPerBlock.y)));
 	applyFilterOnCuda<<<numBlocks, threadsPerBlock>>>(
 		devImageData.data().get(), devOutputImageData.data().get(),
 		image.getSize().x, image.getSize().y,
