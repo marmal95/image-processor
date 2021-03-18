@@ -27,7 +27,7 @@ The result may be poorly visibly on high resolution images as the project was cr
 
 ## Implementations
 
-The projects contains a few **image processing** implementations:
+The project contains a few **image processing** implementations:
 * Sequential implementation - using pure C++
 * Multithreaded implementation with the use of **OpenMP**
 * Parallel implementation with the use of **OpenMPI**
